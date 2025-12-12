@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Bliss Café</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="old_cafe.css" />
+</head>
+<body>
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="header" id="home">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Brew & Bliss</span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#specials" class="nav-link">Specials</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tagline">Your daily dose of comfort, in every cup.</p>
+        <h1 class="hero-title">
+          Welcome to <span>Brew & Bliss Café</span>
+        </h1>
+        <p class="hero-subtitle">
+          Freshly brewed coffee, handcrafted snacks, and a cozy space to relax,
+          work, or catch up with friends.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn primary-btn">View Menu</a>
+          <a href="#contact" class="btn secondary-btn">Book a Table</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>Artisan Coffee Variants</p>
+          </div>
+          <div class="stat-card">
+            <h3>4.8★</h3>
+            <p>Customer Rating</p>
+          </div>
+          <div class="stat-card">
+            <h3>7 AM – 11 PM</h3>
+            <p>Open Everyday</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-main-img"></div>
+        <div class="hero-floating-card card-1">
+          <h4>Today’s Brew</h4>
+          <p>Hazelnut Caramel Latte</p>
+        </div>
+        <div class="hero-floating-card card-2">
+          <h4>Offer</h4>
+          <p>Buy 1 Get 1 on Cappuccino · 4–6 PM</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <h2 class="section-title">About Our Café</h2>
+      <p class="section-subtitle">
+        A cozy corner in the city, brewing happiness since 2018.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>We pour passion into every cup.</h3>
+        <p>
+          At Brew & Bliss, we believe coffee is more than a drink—it’s a ritual.
+          From sourcing ethically-grown beans to crafting the perfect brew, we
+          focus on quality, warmth, and community.
+        </p>
+        <ul class="about-list">
+          <li>Freshly roasted beans sourced from local farms</li>
+          <li>Handcrafted brews & signature beverages</li>
+          <li>Cozy interiors with free Wi-Fi & power outlets</li>
+          <li>Vegan, gluten-free, and healthy snack options</li>
+        </ul>
+        <div class="about-highlight">
+          <span class="badge">Since 2018</span>
+          <p>Serving over <strong>2000+</strong> happy customers every month.</p>
+        </div>
+      </div>
+
+      <!-- <div class="about-image-grid">
+        <div class="about-img about-img-1"></div>
+        <div class="about-img about-img-2"></div>
+        <div class="about-img about-img-3"></div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ================= MENU SECTION ================= -->
+  <section class="section section-alt" id="menu">
+    <div class="section-header">
+      <h2 class="section-title">Our Signature Menu</h2>
+      <p class="section-subtitle">
+        Crafted with love to match every mood and moment.
+      </p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab-btn active" data-category="coffee">Coffee</button>
+      <button class="menu-tab-btn" data-category="tea">Tea</button>
+      <button class="menu-tab-btn" data-category="snacks">Snacks</button>
+      <button class="menu-tab-btn" data-category="desserts">Desserts</button>
+    </div>
+
+    <div class="menu-grid" id="menu-items">
+      <!-- Menu items injected via JS -->
+    </div>
+  </section>
+
+  <!-- ================= SPECIALS SECTION ================= -->
+  <section class="section" id="specials">
+    <div class="section-header">
+      <h2 class="section-title">Today’s Specials</h2>
+      <p class="section-subtitle">
+        Limited-time treats curated just for you.
+      </p>
+    </div>
+
+    <div class="specials-grid">
+      <article class="special-card">
+        <span class="special-label">New</span>
+        <h3>Mocha Almond Frappe</h3>
+        <p>
+          A chilled blend of espresso, almond milk, and rich chocolate, topped
+          with whipped cream and almond flakes.
+        </p>
+        <div class="special-meta">
+          <span class="price">₹260</span>
+          <span class="tag">Iced · Vegan option</span>
+        </div>
+      </article>
+
+      <article class="special-card">
+        <span class="special-label">Chef’s Pick</span>
+        <h3>Truffle Mushroom Sandwich</h3>
+        <p>
+          Toasted sourdough stuffed with buttery mushrooms, cheese, and a touch
+          of truffle oil for that extra aroma.
+        </p>
+        <div class="special-meta">
+          <span class="price">₹320</span>
+          <span class="tag">Best Seller</span>
+        </div>
+      </article>
+
+      <article class="special-card">
+        <span class="special-label">Popular</span>
+        <h3>Lotus Biscoff Cheesecake</h3>
+        <p>
+          Creamy baked cheesecake with a crunchy Biscoff base and caramelized
+          biscuit topping.
+        </p>
+        <div class="special-meta">
+          <span class="price">₹280</span>
+          <span class="tag">Dessert · Sweet</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY SECTION ================= -->
+  <section class="section section-alt" id="gallery">
+    <div class="section-header">
+      <h2 class="section-title">Café Vibes & Ambience</h2>
+      <p class="section-subtitle">
+        A sneak peek into the cozy corners, latte art, and delicious plates.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-1"></div>
+      <div class="gallery-item gallery-2"></div>
+      <!-- <div class="gallery-item gallery-3"></div> -->
+      <div class="gallery-item gallery-4"></div>
+      <div class="gallery-item gallery-5"></div>
+      <!-- <div class="gallery-item gallery-6"></div> -->
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS SECTION ================= -->
+  <section class="section" id="reviews">
+    <div class="section-header">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">
+        Real stories from people who love their time here.
+      </p>
+    </div>
+
+    <div class="reviews-slider">
+      <button class="slider-btn prev-btn" aria-label="Previous review">‹</button>
+      <div class="review-card-wrapper">
+        <!-- Reviews injected via JS -->
+      </div>
+      <button class="slider-btn next-btn" aria-label="Next review">›</button>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="section section-alt" id="contact">
+    <div class="section-header">
+      <h2 class="section-title">Visit or Contact Us</h2>
+      <p class="section-subtitle">
+        Drop by, say hi, or reserve your favorite spot.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Location & Timing</h3>
+        <p><strong>Address:</strong> #336, Chruch Street, MG Road, Bengaluru</p>
+        <p><strong>Timings:</strong> 10:00 AM – 10:30 PM (All Days)</p>
+        <p><strong>Phone:</strong> +91-99887-76512</p>
+        <p><strong>Email:</strong> cafebab@gmail.com</p>
+
+        <div class="contact-badges">
+          <span>Free Wi-Fi</span>
+          <span>Work Friendly</span>
+          <span>Pet Friendly</span>
+        </div>
+
+        <!-- <h4>Quick Map (Embed)</h4>
+        <div class="map-placeholder">
+          <p>Map placeholder – you can replace this with an actual Google Map embed.</p>
+        </div> -->
+      </div>
+
+      <form id="booking-form" action="booking.php" method="post">
+  <h3>Book a Table</h3>
+
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-group form-inline">
+    <div>
+      <label for="date">Date</label>
+      <input id="date" name="date" type="date" required>
+    </div>
+    <div>
+      <label for="time">Time</label>
+      <input id="time" name="time" type="time" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="people">Number of People</label>
+    <select id="people" name="people" required>
+      <option value="" disabled selected>Select</option>
+      <option>1–2</option>
+      <option>3–4</option>
+      <option>5–6</option>
+      <option>7+</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Special Requests</label>
+    <textarea id="message" name="message" rows="3" placeholder="Any allergies, occasions, or notes?"></textarea>
+  </div>
+
+  <button type="submit" class="btn primary-btn full-width">Submit Request</button>
+  <p class="form-status" id="form-status"></p>
+</form>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Brew & Bliss Café</h3>
+        <p>
+          Crafting coffee, conversations, and cozy memories every single day.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#contact">Reservations</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Google Reviews</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Brew & Bliss Café. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js" defer></script>
+</body>
+</html>
